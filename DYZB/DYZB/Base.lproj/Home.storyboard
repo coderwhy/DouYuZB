@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="V6f-pd-12I">
             <objects>
-                <viewController id="boQ-Sq-ljo" sceneMemberID="viewController">
+                <viewController id="boQ-Sq-ljo" customClass="HomeViewController" customModule="DYZB" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="scJ-2W-dkY"/>
                         <viewControllerLayoutGuide type="bottom" id="jbO-XF-tzS"/>
