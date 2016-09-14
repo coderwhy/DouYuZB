@@ -18,6 +18,8 @@
 		63F571C61D88D8DF002761B7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F571C31D88D8DF002761B7 /* MainViewController.swift */; };
 		63F571C81D88D917002761B7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F571C71D88D917002761B7 /* HomeViewController.swift */; };
 		63F571CB1D88DC33002761B7 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F571CA1D88DC33002761B7 /* UIBarButtonItem-Extension.swift */; };
+		63F571CD1D88E9D2002761B7 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F571CC1D88E9D2002761B7 /* PageTitleView.swift */; };
+		63F571CF1D88EB19002761B7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F571CE1D88EB19002761B7 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		63F571C31D88D8DF002761B7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		63F571C71D88D917002761B7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		63F571CA1D88DC33002761B7 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		63F571CC1D88E9D2002761B7 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		63F571CE1D88EB19002761B7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				63F571C91D88DC0A002761B7 /* Extension */,
+				63F571CE1D88EB19002761B7 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 		63F571C51D88D8DF002761B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				63F571CC1D88E9D2002761B7 /* PageTitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,7 +277,9 @@
 			files = (
 				63774CAA1D86598500DCC727 /* AppDelegate.swift in Sources */,
 				63F571C61D88D8DF002761B7 /* MainViewController.swift in Sources */,
+				63F571CD1D88E9D2002761B7 /* PageTitleView.swift in Sources */,
 				63F571CB1D88DC33002761B7 /* UIBarButtonItem-Extension.swift in Sources */,
+				63F571CF1D88EB19002761B7 /* Common.swift in Sources */,
 				63F571C81D88D917002761B7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
