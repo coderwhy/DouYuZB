@@ -55,6 +55,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		632FCE9E1D8E6ACD00C9F8D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		632FCE9F1D8E6AED00C9F8D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		632FCEA01D8E6AED00C9F8D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		63774C9D1D86598500DCC727 = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +128,8 @@
 		63774CBD1D865C9E00DCC727 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				63F571C01D88D893002761B7 /* Model */,
-				63F571C11D88D893002761B7 /* View */,
+				632FCE9F1D8E6AED00C9F8D6 /* Model */,
+				632FCEA01D8E6AED00C9F8D6 /* View */,
 				63F571BF1D88D893002761B7 /* Controller */,
 			);
 			path = Home;
@@ -125,7 +146,7 @@
 		63774CBF1D865C9E00DCC727 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				63F571C41D88D8DF002761B7 /* Model */,
+				632FCE9E1D8E6ACD00C9F8D6 /* Model */,
 				63F571C51D88D8DF002761B7 /* View */,
 				63F571C21D88D8DF002761B7 /* Controller */,
 			);
@@ -158,20 +179,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		63F571C01D88D893002761B7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		63F571C11D88D893002761B7 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		63F571C21D88D8DF002761B7 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,13 +186,6 @@
 				63F571C31D88D8DF002761B7 /* MainViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		63F571C41D88D8DF002761B7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		63F571C51D88D8DF002761B7 /* View */ = {
