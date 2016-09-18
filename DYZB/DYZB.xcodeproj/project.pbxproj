@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		632FCEA21D8E6CCB00C9F8D6 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FCEA11D8E6CCB00C9F8D6 /* RecommendViewController.swift */; };
+		632FCEA51D8E751000C9F8D6 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FCEA31D8E751000C9F8D6 /* CollectionHeaderView.swift */; };
+		632FCEA61D8E751000C9F8D6 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632FCEA41D8E751000C9F8D6 /* CollectionHeaderView.xib */; };
+		632FCEA91D8E779600C9F8D6 /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FCEA71D8E779600C9F8D6 /* CollectionNormalCell.swift */; };
+		632FCEAA1D8E779600C9F8D6 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632FCEA81D8E779600C9F8D6 /* CollectionNormalCell.xib */; };
+		632FCEAD1D8E7CF400C9F8D6 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FCEAB1D8E7CF400C9F8D6 /* CollectionPrettyCell.swift */; };
+		632FCEAE1D8E7CF400C9F8D6 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 632FCEAC1D8E7CF400C9F8D6 /* CollectionPrettyCell.xib */; };
 		63774CAA1D86598500DCC727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63774CA91D86598500DCC727 /* AppDelegate.swift */; };
 		63774CAF1D86598500DCC727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63774CAD1D86598500DCC727 /* Main.storyboard */; };
 		63774CB11D86598500DCC727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63774CB01D86598500DCC727 /* Assets.xcassets */; };
@@ -25,6 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		632FCEA11D8E6CCB00C9F8D6 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		632FCEA31D8E751000C9F8D6 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		632FCEA41D8E751000C9F8D6 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		632FCEA71D8E779600C9F8D6 /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionNormalCell.swift; sourceTree = "<group>"; };
+		632FCEA81D8E779600C9F8D6 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		632FCEAB1D8E7CF400C9F8D6 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
+		632FCEAC1D8E7CF400C9F8D6 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		63774CA61D86598500DCC727 /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63774CA91D86598500DCC727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63774CAE1D86598500DCC727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +86,8 @@
 		632FCEA01D8E6AED00C9F8D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				632FCEA31D8E751000C9F8D6 /* CollectionHeaderView.swift */,
+				632FCEA41D8E751000C9F8D6 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +191,7 @@
 			children = (
 				63C0B29C1D868CF60058ABDF /* Home.storyboard */,
 				63F571C71D88D917002761B7 /* HomeViewController.swift */,
+				632FCEA11D8E6CCB00C9F8D6 /* RecommendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +210,10 @@
 			children = (
 				63F571CC1D88E9D2002761B7 /* PageTitleView.swift */,
 				63F571D01D88F249002761B7 /* PageContentView.swift */,
+				632FCEA71D8E779600C9F8D6 /* CollectionNormalCell.swift */,
+				632FCEA81D8E779600C9F8D6 /* CollectionNormalCell.xib */,
+				632FCEAB1D8E7CF400C9F8D6 /* CollectionPrettyCell.swift */,
+				632FCEAC1D8E7CF400C9F8D6 /* CollectionPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,10 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				63774CB41D86598500DCC727 /* LaunchScreen.storyboard in Resources */,
+				632FCEA61D8E751000C9F8D6 /* CollectionHeaderView.xib in Resources */,
+				632FCEAA1D8E779600C9F8D6 /* CollectionNormalCell.xib in Resources */,
 				63774CB11D86598500DCC727 /* Assets.xcassets in Resources */,
 				63774CAF1D86598500DCC727 /* Main.storyboard in Resources */,
 				63C0B2A11D868D300058ABDF /* Live.storyboard in Resources */,
 				63C0B29E1D868CF60058ABDF /* Home.storyboard in Resources */,
+				632FCEAE1D8E7CF400C9F8D6 /* CollectionPrettyCell.xib in Resources */,
 				63C0B2A71D868D4E0058ABDF /* Profile.storyboard in Resources */,
 				63C0B2A41D868D400058ABDF /* Follow.storyboard in Resources */,
 			);
@@ -282,12 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				63774CAA1D86598500DCC727 /* AppDelegate.swift in Sources */,
+				632FCEA51D8E751000C9F8D6 /* CollectionHeaderView.swift in Sources */,
 				63F571D31D88F3DB002761B7 /* UIColor-Extension.swift in Sources */,
+				632FCEA21D8E6CCB00C9F8D6 /* RecommendViewController.swift in Sources */,
 				63F571C61D88D8DF002761B7 /* MainViewController.swift in Sources */,
 				63F571CD1D88E9D2002761B7 /* PageTitleView.swift in Sources */,
 				63F571D11D88F249002761B7 /* PageContentView.swift in Sources */,
 				63F571CB1D88DC33002761B7 /* UIBarButtonItem-Extension.swift in Sources */,
 				63F571CF1D88EB19002761B7 /* Common.swift in Sources */,
+				632FCEAD1D8E7CF400C9F8D6 /* CollectionPrettyCell.swift in Sources */,
+				632FCEA91D8E779600C9F8D6 /* CollectionNormalCell.swift in Sources */,
 				63F571C81D88D917002761B7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
