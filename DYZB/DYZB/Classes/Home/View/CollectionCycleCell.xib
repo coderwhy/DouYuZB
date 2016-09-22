@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionCycleCell" customModule="DYZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="152"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="YQ2-jT-7FT">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="152"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TB-Gn-LuP">
+                        <rect key="frame" x="0.0" y="122" width="314" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小码哥IT教育" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXT-Rp-sbs">
+                                <rect key="frame" x="15" y="7" width="77" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="TQq-TP-HTA"/>
+                            <constraint firstItem="UXT-Rp-sbs" firstAttribute="centerY" secondItem="3TB-Gn-LuP" secondAttribute="centerY" id="ecG-9Q-oye"/>
+                            <constraint firstItem="UXT-Rp-sbs" firstAttribute="leading" secondItem="3TB-Gn-LuP" secondAttribute="leading" constant="15" id="nAO-LO-dqN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YQ2-jT-7FT" secondAttribute="bottom" id="IbE-qO-gb8"/>
+                <constraint firstAttribute="trailing" secondItem="3TB-Gn-LuP" secondAttribute="trailing" id="SgI-7n-6jW"/>
+                <constraint firstItem="YQ2-jT-7FT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Z7f-1L-WvN"/>
+                <constraint firstAttribute="trailing" secondItem="YQ2-jT-7FT" secondAttribute="trailing" id="fY7-4Y-Oa7"/>
+                <constraint firstItem="YQ2-jT-7FT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kB1-be-Vlg"/>
+                <constraint firstAttribute="bottom" secondItem="3TB-Gn-LuP" secondAttribute="bottom" id="mdH-9h-ZMO"/>
+                <constraint firstItem="3TB-Gn-LuP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="wgT-h3-9Dl"/>
+            </constraints>
+            <size key="customSize" width="314" height="152"/>
+            <connections>
+                <outlet property="iconImageView" destination="YQ2-jT-7FT" id="iIx-HA-WOj"/>
+                <outlet property="titleLabel" destination="UXT-Rp-sbs" id="kzq-Bb-XGs"/>
+            </connections>
+            <point key="canvasLocation" x="372" y="145"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+    </resources>
+</document>

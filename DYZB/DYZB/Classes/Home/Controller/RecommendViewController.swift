@@ -14,6 +14,9 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 
+private let kCycleViewH = kScreenW * 3 / 8
+private let kGameViewH : CGFloat = 90
+
 private let kNormalCellID = "kNormalCellID"
 private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderViewID = "kHeaderViewID"
@@ -44,6 +47,16 @@ class RecommendViewController: UIViewController {
         
         return collectionView
     }()
+    private lazy var cycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
+    private lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
+    }()
     
     // MARK:- 系统回调函数
     override func viewDidLoad() {
@@ -64,6 +77,15 @@ extension RecommendViewController {
     private func setupUI() {
         // 1.将UICollectionView添加到控制器的View中
         view.addSubview(collectionView)
+        
+        // 2.将CycleView添加到UICollectionView中
+        collectionView.addSubview(cycleView)
+        
+        // 3.将gameView添加collectionView中
+        collectionView.addSubview(gameView)
+        
+        // 4.设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -71,8 +93,18 @@ extension RecommendViewController {
 // MARK:- 请求数据
 extension RecommendViewController {
     private func loadData() {
-        recommendVM.requestData { 
+        // 1.请求推荐数据
+        recommendVM.requestData {
+            // 1.展示推荐数据
             self.collectionView.reloadData()
+            
+            // 2.将数据传递给GameView
+            self.gameView.groups = self.recommendVM.anchorGroups
+        }
+        
+        // 2.请求轮播数据
+        recommendVM.requestCycleData { 
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
         }
     }
 }
