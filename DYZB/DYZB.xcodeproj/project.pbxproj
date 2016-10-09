@@ -33,6 +33,10 @@
 		63774CAF1D86598500DCC727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63774CAD1D86598500DCC727 /* Main.storyboard */; };
 		63774CB11D86598500DCC727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63774CB01D86598500DCC727 /* Assets.xcassets */; };
 		63774CB41D86598500DCC727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63774CB21D86598500DCC727 /* LaunchScreen.storyboard */; };
+		638C60E31DA8E91700A370F1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C60E21DA8E91700A370F1 /* GameViewController.swift */; };
+		638C60E51DA8ECC100A370F1 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C60E41DA8ECC100A370F1 /* GameViewModel.swift */; };
+		638C60E71DA8EDD000A370F1 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C60E61DA8EDD000A370F1 /* GameModel.swift */; };
+		638C60E91DA8EEA200A370F1 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C60E81DA8EEA200A370F1 /* BaseGameModel.swift */; };
 		63C0B29E1D868CF60058ABDF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C0B29C1D868CF60058ABDF /* Home.storyboard */; };
 		63C0B2A11D868D300058ABDF /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C0B29F1D868D300058ABDF /* Live.storyboard */; };
 		63C0B2A41D868D400058ABDF /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C0B2A21D868D400058ABDF /* Follow.storyboard */; };
@@ -77,6 +81,10 @@
 		63774CB01D86598500DCC727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63774CB31D86598500DCC727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63774CB51D86598500DCC727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638C60E21DA8E91700A370F1 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		638C60E41DA8ECC100A370F1 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		638C60E61DA8EDD000A370F1 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		638C60E81DA8EEA200A370F1 /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		63C0B29D1D868CF60058ABDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		63C0B2A01D868D300058ABDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		63C0B2A31D868D400058ABDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DYZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
@@ -107,6 +115,7 @@
 		632FCE9E1D8E6ACD00C9F8D6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				638C60E81DA8EEA200A370F1 /* BaseGameModel.swift */,
 				63744BF01D8F862C00BF4B96 /* AnchorGroup.swift */,
 				63744BF21D8F875B00BF4B96 /* AnchorModel.swift */,
 			);
@@ -134,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				632FDC5C1D921F7800B6C536 /* CycleModel.swift */,
+				638C60E61DA8EDD000A370F1 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				63744BEC1D8F7FA600BF4B96 /* RecommendViewModel.swift */,
+				638C60E41DA8ECC100A370F1 /* GameViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -250,6 +261,7 @@
 				63C0B29C1D868CF60058ABDF /* Home.storyboard */,
 				63F571C71D88D917002761B7 /* HomeViewController.swift */,
 				632FCEA11D8E6CCB00C9F8D6 /* RecommendViewController.swift */,
+				638C60E21DA8E91700A370F1 /* GameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -334,11 +346,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "小码哥";
 				TargetAttributes = {
 					63774CA51D86598500DCC727 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -440,12 +453,16 @@
 				632FDC591D92179E00B6C536 /* RecommendCycleView.swift in Sources */,
 				63774CAA1D86598500DCC727 /* AppDelegate.swift in Sources */,
 				632FCEA51D8E751000C9F8D6 /* CollectionHeaderView.swift in Sources */,
+				638C60E51DA8ECC100A370F1 /* GameViewModel.swift in Sources */,
 				63F571D31D88F3DB002761B7 /* UIColor-Extension.swift in Sources */,
+				638C60E31DA8E91700A370F1 /* GameViewController.swift in Sources */,
 				632FCEA21D8E6CCB00C9F8D6 /* RecommendViewController.swift in Sources */,
 				63744BF11D8F862C00BF4B96 /* AnchorGroup.swift in Sources */,
 				63F571C61D88D8DF002761B7 /* MainViewController.swift in Sources */,
 				63F571CD1D88E9D2002761B7 /* PageTitleView.swift in Sources */,
 				632FDC601D92228000B6C536 /* CollectionCycleCell.swift in Sources */,
+				638C60E71DA8EDD000A370F1 /* GameModel.swift in Sources */,
+				638C60E91DA8EEA200A370F1 /* BaseGameModel.swift in Sources */,
 				632FDC5D1D921F7800B6C536 /* CycleModel.swift in Sources */,
 				63F571D11D88F249002761B7 /* PageContentView.swift in Sources */,
 				63F571CB1D88DC33002761B7 /* UIBarButtonItem-Extension.swift in Sources */,
@@ -535,8 +552,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -579,8 +598,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -599,6 +620,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -607,13 +629,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BABF964E5DAEA7F29B631FB /* Pods-DYZB.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -621,13 +645,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 678BB79C5E664F5183D33499 /* Pods-DYZB.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = DYZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DYZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

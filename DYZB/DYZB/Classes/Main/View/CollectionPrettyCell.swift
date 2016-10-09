@@ -21,7 +21,7 @@ class CollectionPrettyCell: CollectionBaseCell {
             super.anchor = anchor
             
             // 2.所在的城市
-            cityBtn.setTitle(anchor?.anchor_city, forState: .Normal)
+            cityBtn.setTitle(anchor?.anchor_city, for: UIControlState())
         }
     }
 
