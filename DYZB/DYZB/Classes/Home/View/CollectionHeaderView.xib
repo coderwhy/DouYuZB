@@ -54,6 +54,7 @@
                 <outlet property="moreBtn" destination="z94-Te-vfm" id="mlJ-O6-0UL"/>
                 <outlet property="titleLabel" destination="OFb-pz-Tbe" id="nmg-Xn-GLe"/>
             </connections>
+            <point key="canvasLocation" x="9" y="55"/>
         </collectionReusableView>
     </objects>
     <resources>
