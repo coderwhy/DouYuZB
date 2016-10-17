@@ -19,7 +19,7 @@ let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
     
     // MARK: 定义属性
     var baseVM : BaseViewModel!
@@ -58,8 +58,15 @@ class BaseAnchorViewController: UIViewController {
 
 // MARK:- 设置UI界面
 extension BaseAnchorViewController {
-    func setupUI() {
+    override func setupUI() {
+        // 1.给父类中内容View的引用进行赋值
+        contentView = collectionView
+        
+        // 2.添加collectionView
         view.addSubview(collectionView)
+        
+        // 3.调用super.setupUI()
+        super.setupUI()
     }
 }
 
@@ -70,8 +77,8 @@ extension BaseAnchorViewController {
 }
 
 
-// MARK:- 遵守UICollectionView的数据源&代理协议
-extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionViewDelegate {
+// MARK:- 遵守UICollectionView的数据源
+extension BaseAnchorViewController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return baseVM.anchorGroups.count
     }
@@ -100,3 +107,37 @@ extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionVie
         return headerView
     }
 }
+
+
+// MARK:- 遵守UICollectionView的代理协议
+extension BaseAnchorViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // 1.取出对应的主播信息
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        // 2.判断是秀场房间&普通房间
+        anchor.isVertical == 0 ? pushNormalRoomVc() : presentShowRoomVc()
+    }
+    
+    private func presentShowRoomVc() {
+        // 1.创建ShowRoomVc
+        let showRoomVc = RoomShowViewController()
+        
+        // 2.以Modal方式弹出
+        present(showRoomVc, animated: true, completion: nil)
+    }
+    
+    private func pushNormalRoomVc() {
+        // 1.创建NormalRoomVc
+        let normalRoomVc = RoomNormalViewController()
+        
+        // 2.以Push方式弹出
+        navigationController?.pushViewController(normalRoomVc, animated: true)
+    }
+}
+
+
+
+
+
+
